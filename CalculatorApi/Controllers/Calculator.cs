@@ -14,4 +14,10 @@ public class Calculator : ControllerBase
     {
         _logger = logger;
     }
+
+    [HttpGet("Add")]
+    public decimal Add(decimal left,decimal right)
+    {
+        return left + right
+    }
 }
