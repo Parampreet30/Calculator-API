@@ -27,17 +27,19 @@ public class Calculator : ControllerBase
         return left - right;
     }
 
-    [HttpGet("")]
+    [HttpGet("Multiply")]
     public decimal Multiply(decimal left, decimal right)
     {
         return left * right;
     }
-
+    
+     [HttpGet("Divide")]
     public decimal Divide(decimal left, decimal right)
     {
         return left / right;
     }
 
+      [HttpGet("Modulo")]
     public decimal Modulo(decimal left, decimal right)
     {
         return left % right;
