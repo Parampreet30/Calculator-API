@@ -24,6 +24,12 @@ public class Calculator : ControllerBase
     [HttpGet("Subtract")]
     public decimal Subtract(decimal left, decimal right)
     {
-        return left - right
+        return left - right;
+    }
+
+    [HttpGet("")]
+    public decimal Multiply(decimal left, decimal right)
+    {
+        return left * right;
     }
 }
