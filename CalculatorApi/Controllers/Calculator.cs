@@ -5,12 +5,12 @@ namespace CalculatorApi.Controllers;
 [ApiController]
 [Route("[controller]")]
 
-public class calculator : ControllerBase
+public class Calculator : ControllerBase
 {
 
-    private readonly ILogger<calculator>_logger;
+    private readonly ILogger<Calculator>_logger;
 
-    public calculator(ILogger<calculator> logger)
+    public Calculator(ILogger<Calculator> logger)
     {
         _logger = logger;
     }
