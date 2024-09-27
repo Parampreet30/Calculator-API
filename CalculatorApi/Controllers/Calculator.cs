@@ -16,8 +16,14 @@ public class Calculator : ControllerBase
     }
 
     [HttpGet("Add")]
-    public decimal Add(decimal left,decimal right)
+    public decimal Add(decimal left, decimal right)
     {
         return left + right
+    }
+
+    [HttpGet("Subtract")]
+    public decimal Subtract(decimal left, decimal right)
+    {
+        return left - right
     }
 }
