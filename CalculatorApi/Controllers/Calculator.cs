@@ -37,4 +37,9 @@ public class Calculator : ControllerBase
     {
         return left / right;
     }
+
+    public decimal Modulo(decimal left, decimal right)
+    {
+        return left % right;
+    }
 }
